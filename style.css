@@ -7,3 +7,55 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dr-julio-sarango
 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Para centrar el logo */
+    align-items: center;
+    max-width: 80%; /* Limitando el ancho al 80% */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+}
+.logo img {
+    max-width: 150px; /* Ancho máximo del logo */
+    display: block;
+    margin: 0 auto; /* Centrar el logo */
+    border-radius: 20%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(7, auto); /* Una columna para cada elemento del menú */
+    gap: 20px; /* Espacio entre columnas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 30px; /* Espacio entre el menú y el contenido superior */
+}
