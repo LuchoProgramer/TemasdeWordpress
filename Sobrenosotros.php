@@ -1,6 +1,8 @@
-<section id="about" class="bg-light py-5">
+<?php get_header(); ?>
+
+<section id="Sobrenosotros" class="bg-light py-5">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="texto">
                     <h2 class="mb-4">Sobre Nosotros</h2>
@@ -18,3 +20,43 @@
         </div>
     </div>
 </section>
+
+<style>
+    .texto {
+        padding: 0 20px;
+    }
+
+    .img-nosotros img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Estilos adicionales para alinear horizontalmente */
+    .row {
+        display: flex;
+    }
+    .col-md-6 {
+        flex: 1; /* Para que ambos elementos tengan el mismo tamaño */
+    }
+    /* Media query para pantallas de 550px */
+@media (max-width: 550px) {
+    .texto {
+        padding: 0;
+    }
+
+    .img-nosotros img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Eliminar estilos adicionales para alinear horizontalmente */
+    .row {
+        display: block;
+    }
+    .col-md-6 {
+        flex: none; /* Restablecer el tamaño a automático */
+        margin-bottom: 20px; /* Agregar espacio entre columnas */
+    }
+}
+
+</style>

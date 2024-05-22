@@ -19,3 +19,9 @@ add_theme_support('post-thumbnails');
 function theme_url() {
     return get_template_directory_uri();
 }
+function enqueue_my_scripts() {
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('carousel-script', get_template_directory_uri() . '/carousel.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_scripts');
+
